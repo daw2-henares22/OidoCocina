@@ -103,14 +103,14 @@ export function Header(){
 
 
         <Popover className="relative">
-            <PopoverButton className="transition duration-150 hover:text-blue-gray-400 hover:scale-x-105 text-lg fixed left-10 mt-7 flex justify-between items-center flex-wrap gap-x-1 font-semibold text-slate-50">
+            <PopoverButton className="transition duration-150 hover:text-blue-gray-400 hover:scale-x-105 text-lg fixed right-10 mt-7 flex justify-between items-center flex-wrap gap-x-1 font-semibold text-slate-50">
               <span>Solutions</span>
               <ChevronDownIcon aria-hidden="true" className="h-5 w-5" />
             </PopoverButton>
 
             <PopoverPanel
               transition
-              className="absolute w-80 relaive left-70 z-10 mt-20 flex max-w-max px-4 transition data-[closed]:translate-y-1 data-[closed]:opacity-0 data-[enter]:duration-200 data-[leave]:duration-150 data-[enter]:ease-out data-[leave]:ease-in"
+              className="absolute w-80 right-10 z-10 mt-20 flex max-w-max px-4 transition data-[closed]:translate-y-1 data-[closed]:opacity-0 data-[enter]:duration-200 data-[leave]:duration-150 data-[enter]:ease-out data-[leave]:ease-in"
             >
               <div className="w-screen max-w-md flex-auto overflow-hidden rounded-3xl bg-white text-sm/6 shadow-lg ring-1 ring-gray-900/5">
                 <div className="p-4">
@@ -133,13 +133,8 @@ export function Header(){
     </Popover>
 
 
-    {/* <div
+    <div
   className="relative flex h-[calc(100vh-20rem)] w-full max-w-[20rem] flex-col rounded-xl bg-white bg-clip-border p-4 text-gray-700 shadow-xl shadow-blue-gray-900/5">
-  <div class="p-4 mb-2">
-    <h5 class="block font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
-      Sidebar
-    </h5>
-  </div>
   <nav class="flex min-w-[240px] flex-col gap-1 p-2 font-sans text-base font-normal text-blue-gray-700">
     <div role="button"
       className="transition duration-150 hover:scale-x-105 flex items-center w-full p-3 leading-tight rounded-lg outline-none text-start hover:bg-blue-gray-50 hover:bg-opacity-80 hover:text-blue-gray-900 focus:bg-blue-gray-50 focus:bg-opacity-80 focus:text-blue-gray-900 active:bg-blue-gray-50 active:bg-opacity-80 active:text-blue-gray-900">
@@ -220,7 +215,7 @@ export function Header(){
       Log Out
     </div>
   </nav>
-</div> */}
+</div>
     </>
     )
 }
